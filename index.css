@@ -1,0 +1,35 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0;
+    background-image: url(Cassette-tape.jpg);
+    background-size: cover;
+}
+
+a, a > * {
+    text-decoration: none;
+    color: orange;
+    animation: glow 0.3s linear infinite alternate;
+}
+
+#left {
+    text-align: right;
+}
+
+main {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(231, 255, 19, 0.541);
+    }
+    100% {
+        text-shadow: 0 0 3px rgba(255, 255, 0, 0.479);
+    }
+}
